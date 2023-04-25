@@ -11,7 +11,7 @@
 int main(void)
 {
 	char buffer[BUFFER_SIZE];
-	char *args[MAX_ARGS + 1];
+	char *args[MAXIMUM_ARGUEMENTS + 1];
 	pid_t pid;
 
 	while (1)
@@ -38,7 +38,7 @@ int main(void)
 			int i = 0;
 			char *token = strtok(buffer, " ");
 
-			while (token != NULL && i < MAX_ARGS)
+			while (token != NULL && i < MAXIMUM_ARGUEMENTS)
 			{
 				args[i++] = token;
 				token = strtok(NULL, " ");
