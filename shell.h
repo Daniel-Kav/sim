@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-#define MAXIMUM_ARGS 10
+#define MAXIMUM_ARGUEMENTS 10
 #define BUFFER_SIZE 1024
 
 int main(void);
