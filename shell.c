@@ -12,7 +12,7 @@ int main(void)
 {
 	char buffer[BUFFER_SIZE];
 	char *args[MAXIMUM_ARGUEMENTS + 1];
-	pid_t pid;
+	pid_t process_id;
 
 	while (1)
 	{
@@ -26,25 +26,25 @@ int main(void)
 		}
 
 		buffer[strcspn(buffer, "\n")] = 0;
-		pid = fork();
+		process_id = fork();
 
-		if (pid == -1)
+		if (process_id == -1)
 		{
 			perror("fork");
 			exit(EXIT_FAILURE);
 		}
-		else if (pid == 0)
+		else if (process_id == 0)
 		{
-			int i = 0;
+			int index = 0;
 			char *token = strtok(buffer, " ");
 
-			while (token != NULL && i < MAXIMUM_ARGUEMENTS)
+			while (token != NULL && index < MAXIMUM_ARGUEMENTS)
 			{
-				args[i++] = token;
+				args[index++] = token;
 				token = strtok(NULL, " ");
 			}
 
-			args[i] = NULL;
+			args[index] = NULL;
 			execvp(args[0], args);
 			perror(args[0]);
 			exit(EXIT_FAILURE);
@@ -52,7 +52,7 @@ int main(void)
 		else
 		{
 			int status;
-			if (waitpid(pid, &status, 0) == -1)
+			if (waitpid(process_id, &status, 0) == -1)
 			{
 				perror("waitpid");
 				exit(EXIT_FAILURE);
