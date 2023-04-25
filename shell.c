@@ -10,9 +10,9 @@
 
 int main(void)
 {
+	pid_t process_id;
 	char buffer[BUFFER_SIZE];
 	char *args[MAXIMUM_ARGUEMENTS + 1];
-	pid_t process_id;
 
 	while (1)
 	{
