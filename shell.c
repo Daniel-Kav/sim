@@ -52,6 +52,7 @@ int main(void)
 		else
 		{
 			int status;
+
 			if (waitpid(process_id, &status, 0) == -1)
 			{
 				perror("waitpid");
