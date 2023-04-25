@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
-
-#define MAX_ARGS 10
-#define BUFFER_SIZE 1024
+#include "shell.h"
 
 /**
  * main - simple shell program entry point
