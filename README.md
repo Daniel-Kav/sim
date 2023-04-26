@@ -29,3 +29,5 @@ You should have an AUTHORS file at the root of your repository, listing all indi
 ## shell.c - The source file for the core logic of the simple shell program.
 
 ## shell.h - The prototype source file for the simple shell program.
+
+## Compile with the following gcc flags - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c shell.h -o hsh
