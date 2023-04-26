@@ -16,7 +16,7 @@ int main(void)
 
 	while (1)
 	{
-		printf("alx_shell$ ");
+		printf("$ ");
 		fflush(stdout);
 
 		if (fgets(buffer, BUFFER_SIZE, stdin) == NULL)
