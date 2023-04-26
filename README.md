@@ -1,4 +1,4 @@
-## C - Simple Shell
+## C - Simple Shell program written by Antony Muga & Nicholas Oyengo.
 
 ## hsh - The object file for the shell program.
 
