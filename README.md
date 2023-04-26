@@ -1,4 +1,6 @@
-## C - Simple Shell program written by Antony Muga & Nicholas Oyengo.
+# C - Simple Shell program written by Antony Muga & Nicholas Oyengo.
+
+## This is a simple shell program written in C programming language.
 
 ## hsh - The object file for the shell program.
 
