@@ -27,3 +27,5 @@ You should have an AUTHORS file at the root of your repository, listing all indi
 ## hsh - The object file for the shell program.
 
 ## shell.c - The source file for the core logic of the simple shell program.
+
+## shell.h - The prototype source file for the simple shell program.
