@@ -5,7 +5,7 @@
  * Description: simple shell program written in C
  * for UNIX based systems. Program written by
  * Antony Muga and Nicholas Oyengo
- * Return:Status code 0 if successful
+ * Return:Status code 0 if su
  */
 
 int main(void)
